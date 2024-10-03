@@ -1,2 +1,2 @@
 # python-learning
-this repo is basis to advanced learning python
+this repo is understanding in python for basics to advanced
