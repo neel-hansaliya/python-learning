@@ -502,4 +502,47 @@
 # print(arr1)
 # print(type(arr))
 
-# ##############################################################################################################
+################################################################################################################
+#list vs numpy
+
+# a = [1,2,3]
+# b = [1,2,3]
+# print(a*b) # not executed that is throw error but numpy in posible 
+
+# import numpy as np
+
+# a = np.array([1,2,3])
+# b = np.array([1,2,3])
+
+# print(a*b) # numpy in posible multiplication in two array ans is = [1 4 9]
+
+#################################################################################################################
+# multi dimensional array in find specific value using indexing
+
+# import numpy as np
+
+# a = np.array([[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]])
+
+# print(a[1,3]) # this is used for find specific value
+# print(a[1,:]) # two dots meaning is all column are show
+# print(a[1,2:]) # second row and second column to all value are show
+# print(a[1,:2]) # second row first tow element are show
+
+#################################################################################################################
+
+#pandas # convert dataframe
+
+# import pandas as pd
+# import numpy as np
+
+# arr = np.arange(0,21).reshape(3,7)
+# arr2 = pd.DataFrame(data = arr, index=["row1", "row2", "row3"], columns=["col1", "col2", "col3", "col4", "col5", "col6", "col7"])
+# # arr3 = arr2[["col1", "col2", "col3"]]             #find data column wise
+# # arr4 = arr2.loc[['row2' , 'row3']]                #find particular row in dataframe
+# # arr5 = arr2.iloc[1:,0:2]                          #column and row find both to use "iloc" 
+# # arr6 = arr2.iloc[:, [0, -1]]                      #find first column last column data find
+# # arr7 = arr2.iloc[0:,0:4].values                   #convert dataframe into arrays
+# print(arr2)
+
+#Note
+# -> multiple row and multiple coulmumn are dataframe but one row or one column it's a series
